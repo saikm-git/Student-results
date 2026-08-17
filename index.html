@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>College Results Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="college-logo">
+            CR
+        </div>
+
+        <div class="college-info">
+            <h1>BVCE COLLEGE OF ENGINEERING</h1>
+            <p>Student Results Portal</p>
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <section class="search-card">
+
+            <h2>Check Your Results</h2>
+
+            <p class="subtitle">
+                Enter your Hall Ticket Number and select your year.
+            </p>
+
+            <div class="form-group">
+
+                <label for="hallTicket">
+                    Hall Ticket Number
+                </label>
+
+                <input
+                    type="text"
+                    id="hallTicket"
+                    placeholder="Example: 25221A0585"
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="year">
+                    Year
+                </label>
+
+                <select id="year">
+
+                    <option value="">
+                        Select Year
+                    </option>
+
+                    <option value="1">
+                        1st Year
+                    </option>
+
+                    <option value="2">
+                        2nd Year
+                    </option>
+
+                    <option value="3">
+                        3rd Year
+                    </option>
+
+                    <option value="4">
+                        4th Year
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button
+                id="searchButton"
+                onclick="searchResult()"
+            >
+                View Result
+            </button>
+
+        </section>
+
+
+        <section
+            id="resultSection"
+            class="result-section hidden"
+        >
+
+            <div class="result-header">
+
+                <h2>Examination Result</h2>
+
+                <span id="resultStatus"></span>
+
+            </div>
+
+
+            <div class="student-details">
+
+                <div>
+                    <span>Student Name</span>
+                    <strong id="studentName"></strong>
+                </div>
+
+                <div>
+                    <span>Hall Ticket Number</span>
+                    <strong id="studentHallTicket"></strong>
+                </div>
+
+                <div>
+                    <span>Course</span>
+                    <strong id="studentCourse"></strong>
+                </div>
+
+                <div>
+                    <span>Year</span>
+                    <strong id="studentYear"></strong>
+                </div>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>S.No</th>
+                            <th>Subject</th>
+                            <th>Marks</th>
+                            <th>Grade</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="subjectsTable">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <div class="summary">
+
+                <div class="summary-box">
+                    <span>SGPA</span>
+                    <strong id="studentSGPA"></strong>
+                </div>
+
+                <div class="summary-box">
+                    <span>CGPA</span>
+                    <strong id="studentCGPA"></strong>
+                </div>
+
+                <div class="summary-box">
+                    <span>Result</span>
+                    <strong id="studentResult"></strong>
+                </div>
+
+            </div>
+
+
+            <button
+                class="print-button"
+                onclick="window.print()"
+            >
+                Print Result
+            </button>
+
+        </section>
+
+
+        <section
+            id="notFound"
+            class="not-found hidden"
+        >
+
+            <h3>Result Not Found</h3>
+
+            <p>
+                Please check your Hall Ticket Number and Year.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 BVCE College of Engineering
+        </p>
+
+        <p>
+            College Results Portal
+        </p>
+
+    </footer>
+
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>    
+0
+
