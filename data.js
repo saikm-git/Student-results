@@ -71,7 +71,7 @@ const students = [
 
 
     {
-        hallTicket: "25221A0585",
+        hallTicket: "25221A0582",
         year: "1",
         name: "Ganesh",
         course: "B.Tech -CSE",
