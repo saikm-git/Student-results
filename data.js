@@ -3,7 +3,7 @@ const students = [
     {
         hallTicket: "25221A0585",
         year: "1",
-        name: "sai kiran",
+        name: "Malladi.sai kiran",
         course: "B.Tech - CSE",
 
         subjects: [
@@ -38,7 +38,7 @@ const students = [
     {
         hallTicket: "25221A0584",
         year: "1",
-        name: "varshini",
+        name: "Mahanthi.varshini",
         course: "B.Tech - CSE",
 
         subjects: [
@@ -73,7 +73,7 @@ const students = [
     {
         hallTicket: "25221A0582",
         year: "1",
-        name: "Ganesh",
+        name: "L.M.D.S.Ganesh",
         course: "B.Tech -CSE",
 
         subjects: [
@@ -105,5 +105,10 @@ const students = [
     }
 
 ];
-0
+
+
+{
+    hallTicket:"25221A0586",
+        year:"1",
+        name:"
 
