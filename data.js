@@ -110,5 +110,5 @@ const students = [
 {
     hallTicket:"25221A0586",
         year:"1",
-        name:"
+    
 
